@@ -8,4 +8,4 @@
 	4. Add an environmental variable `GITHUB_TOKEN` with the value of the GitHub Token you generated.
 3. Deploy and see the result!
 
-https://.....vercel.app/?username=ryo-ma
+https://.....vercel.app/?username=lucthienphong1120

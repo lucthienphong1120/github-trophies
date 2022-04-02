@@ -115,7 +115,7 @@ export class MultipleLangTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Rainbow Lang User",
-        (wantMultipleLang) ? 0 : 10,
+        (wantMultipleLang) ? 5 : 10,
       ),
     ];
     super(score, rankConditions);
@@ -137,7 +137,7 @@ export class AllSuperRankTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "AllSuperRank";
     this.filterTitles = ["AllSuperRank"];
-    this.bottomMessage = score + "pt";
+    this.bottomMessage = "All S Rank";
     this.hidden = false;
   }
 }
@@ -213,12 +213,12 @@ export class TotalStarTrophy extends Trophy {
       new RankCondition(
         RANK.SSS,
         "Super Stargazer",
-        2000,
+        1000,
       ),
       new RankCondition(
         RANK.SS,
         "High Stargazer",
-        700,
+        500,
       ),
       new RankCondition(
         RANK.S,
@@ -238,7 +238,7 @@ export class TotalStarTrophy extends Trophy {
       new RankCondition(
         RANK.A,
         "You are a Star",
-        30,
+        20,
       ),
       new RankCondition(
         RANK.B,
@@ -263,17 +263,17 @@ export class TotalCommitTrophy extends Trophy {
       new RankCondition(
         RANK.SSS,
         "God Committer",
-        4000,
+        2000,
       ),
       new RankCondition(
         RANK.SS,
         "Deep Committer",
-        2000,
+        1000,
       ),
       new RankCondition(
         RANK.S,
         "Super Committer",
-        1000,
+        700,
       ),
       new RankCondition(
         RANK.AAA,
@@ -318,7 +318,7 @@ export class TotalFollowerTrophy extends Trophy {
       new RankCondition(
         RANK.SS,
         "Ultra Celebrity",
-        400,
+        500,
       ),
       new RankCondition(
         RANK.S,
@@ -363,37 +363,37 @@ export class TotalIssueTrophy extends Trophy {
       new RankCondition(
         RANK.SSS,
         "God Issuer",
-        1000,
+        500,
       ),
       new RankCondition(
         RANK.SS,
         "Deep Issuer",
-        500,
+        200,
       ),
       new RankCondition(
         RANK.S,
         "Super Issuer",
-        200,
+        100,
       ),
       new RankCondition(
         RANK.AAA,
         "Ultra Issuer",
-        100,
+        50,
       ),
       new RankCondition(
         RANK.AA,
         "Hyper Issuer",
-        50,
+        20,
       ),
       new RankCondition(
         RANK.A,
         "High Issuer",
-        20,
+        10,
       ),
       new RankCondition(
         RANK.B,
         "Middle Issuer",
-        10,
+        5,
       ),
       new RankCondition(
         RANK.C,
@@ -413,37 +413,37 @@ export class TotalPullRequestTrophy extends Trophy {
       new RankCondition(
         RANK.SSS,
         "God Puller",
-        1000,
+        500,
       ),
       new RankCondition(
         RANK.SS,
         "Deep Puller",
-        500,
+        200,
       ),
       new RankCondition(
         RANK.S,
         "Super Puller",
-        200,
+        100,
       ),
       new RankCondition(
         RANK.AAA,
         "Ultra Puller",
-        100,
+        50,
       ),
       new RankCondition(
         RANK.AA,
         "Hyper Puller",
-        50,
+        20,
       ),
       new RankCondition(
         RANK.A,
         "High Puller",
-        20,
+        10,
       ),
       new RankCondition(
         RANK.B,
         "Middle Puller",
-        10,
+        5,
       ),
       new RankCondition(
         RANK.C,
@@ -468,17 +468,17 @@ export class TotalRepositoryTrophy extends Trophy {
       new RankCondition(
         RANK.SS,
         "Deep Repo Creator",
-        90,
+        70,
       ),
       new RankCondition(
         RANK.S,
         "Super Repo Creator",
-        80,
+        50,
       ),
       new RankCondition(
         RANK.AAA,
         "Ultra Repo Creator",
-        50,
+        40,
       ),
       new RankCondition(
         RANK.AA,
