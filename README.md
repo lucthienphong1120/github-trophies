@@ -1,7 +1,7 @@
-# Quick Start Guide
-This "hacked" version allows you to automatically unlock all secret trophies.
+# Quick Start
+This "hacked" version allows you to show all secret trophies.
 
-In this file, some modifications and improvements are added
+In this file, some modifications and improvements are added!
 
 Just use my deployment [(hacked-github-stat-trophies.vercel.app)](https://hacked-github-stat-trophies.vercel.app) and follow the general instructions from [the original repo](https://github.com/ryo-ma/github-profile-trophy).
 

@@ -50,7 +50,7 @@ export class UserInfo {
   public readonly languageCount: number;
   public readonly durationYear: number;
   public readonly ancientAccount: number;
-  public readonly joined2020: number;
+  public readonly newAccount: number;
   constructor(
     userActivity: GitHubUserActivity,
     userIssue: GitHubUserIssue,
@@ -77,14 +77,10 @@ export class UserInfo {
         });
       }
     });
-    const durationTime = new Date().getTime() -
-      new Date(userActivity.createdAt).getTime();
+    const durationTime = new Date().getTime() - new Date(userActivity.createdAt).getTime();
     const durationYear = new Date(durationTime).getUTCFullYear() - 1970;
-    const ancientAccount =
-      new Date(userActivity.createdAt).getFullYear() <= 2010 ? 1 : 0;
-    const joined2020 = new Date(userActivity.createdAt).getFullYear() == 2020
-      ? 1
-      : 0;
+    const ancientAccount = new Date(userActivity.createdAt).getFullYear() <= 2010 ? 1 : 0;
+    const newAccount = new Date(userActivity.createdAt).getFullYear() >= 2020 ? 1 : 0;
     this.totalCommits = totalCommits;
     this.totalFollowers = userActivity.followers.totalCount;
     this.totalIssues = userIssue.openIssues.totalCount + userIssue.closedIssues.totalCount;
@@ -95,6 +91,6 @@ export class UserInfo {
     this.languageCount = languages.size;
     this.durationYear = durationYear;
     this.ancientAccount = ancientAccount;
-    this.joined2020 = joined2020;
+    this.newAccount = newAccount;
   }
 }
