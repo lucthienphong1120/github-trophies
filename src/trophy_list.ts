@@ -10,7 +10,7 @@ import {
   LongTimeAccountTrophy,
   AncientAccountTrophy,
   NewAccountTrophy,
-  AllSuperRankTrophy,
+  AchieveSuperRankTrophy,
   MultipleOrganizationsTrophy,
 } from "./trophy.ts";
 import { UserInfo } from "./user_info.ts";
@@ -30,7 +30,7 @@ export class TrophyList {
     );
     // Secret trophies
     this.trophies.push(
-      new AllSuperRankTrophy(this.isAllSRank),
+      new AchieveSuperRankTrophy(this.haveSRank),
       new MultipleLangTrophy(userInfo.languageCount),
       new LongTimeAccountTrophy(userInfo.durationYear),
       new AncientAccountTrophy(userInfo.ancientAccount),
@@ -44,8 +44,8 @@ export class TrophyList {
   get getArray() {
     return this.trophies;
   }
-  private get isAllSRank() {
-    return this.trophies.every((trophy) => trophy.rank.slice(0, 1) == RANK.S) ? 1 : 0;
+  private get haveSRank() {
+    return this.trophies.some((trophy) => trophy.rank.slice(0, 1) == RANK.S) ? 1 : 0;
   }
   filterByHideen() {
     this.trophies = this.trophies.filter((trophy) =>

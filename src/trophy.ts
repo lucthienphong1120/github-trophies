@@ -10,7 +10,7 @@ class RankCondition {
   ) {}
 }
 
-let wantAllSuperRank = true;
+let wantAchieveSuperRank = false;
 let wantMultipleLang = true;
 let wantLongTimeAccount = true;
 let wantAncientAccount = false;
@@ -125,19 +125,19 @@ export class MultipleLangTrophy extends Trophy{
   }
 }
 
-export class AllSuperRankTrophy extends Trophy{
+export class AchieveSuperRankTrophy extends Trophy{
   constructor(score: number){
     const rankConditions = [
       new RankCondition(
         RANK.SECRET,
         "S Rank Hacker",
-        (wantAllSuperRank) ? 0 : 1,
+        (wantAchieveSuperRank) ? 0 : 1,
       ),
     ];
     super(score, rankConditions);
-    this.title = "AllSuperRank";
-    this.filterTitles = ["AllSuperRank"];
-    this.bottomMessage = "All S Rank";
+    this.title = "AchieveSuperRank";
+    this.filterTitles = ["AchieveSuperRank"];
+    this.bottomMessage = "Have S Rank";
     this.hidden = false;
   }
 }

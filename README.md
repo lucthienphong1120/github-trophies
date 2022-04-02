@@ -13,7 +13,7 @@ You'll have to deploy yourself, for [Vercel](/VercelDeployGuide.md)) or [local](
 If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts at line 13](/src/trophy.ts#L13)
 
 ```ts
-let wantAllSuperRank = true;
+let wantAchieveSuperRank = false;
 let wantMultipleLang = true;
 let wantLongTimeAccount = true;
 let wantAncientAccount = false;
@@ -25,10 +25,10 @@ let wantMultipleOrganizations = true;
 
 Secret Trophies
 
-| Name of trophy | want = true | default |
+| Name of trophy | want active | default |
 | --- | --- | --- |
 | MultipleLangTrophy | 5 | 10 |
-| AllSuperRankTrophy | 0 | 1 |
+| AchieveSuperRankTrophy | 0 | 1 |
 | NewAccountTrophy | 0 | 1 |
 | AncientAccountTrophy | 0 | 1 |
 | LongTimeAccountTrophy | 0 | 5 |
@@ -47,11 +47,13 @@ Base Trophies
 
 ## Change logs
 
-- renewing trophy "NewUserTrophy" instead of "Joined2020Trophy"
-- condition of "newUserTrophy" from `==2020` to `>=2020`
+- show all trophies including secret and unreached (conditions remain the same)
+- renewing trophy "AchieveSuperRankTrophy" instead of "AllSuperRankTrophy"
+- condition of "AchieveSuperRankTrophy" from `every` to `at least one`
+- renewing trophy "NewAccountTrophy" instead of "Joined2020Trophy"
+- condition of "NewAccountTrophy" from `==2020` to `>=2020`
 - unit system of "LongTimeAccountTrophy" from `pt` to `year(s)`
 - condition of "LongTimeAccountTrophy" from `10years` to `5years`
-- show all trophies including secrets (conditions remain the same)
 - Open the "wantAllSuperRank" and "wantMultipleLang" trophies by default (conditions is 0)
 - conditions of "MultipleOrganizations" from `3` to `1` (open by default)
 - change the distance between conditions and reduce the difficulty of "TotalStarTrophy"
