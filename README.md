@@ -1,23 +1,24 @@
 # Quick Start
-This "hacked" version allows you to show all secret trophies.
+
+This "hacked" version of `Github Profile Trophy` (ryo-ma) allows you to show all secret trophies.
 
 In this file, some modifications and improvements are added!
 
-Just use my deployment [(hacked-github-stat-trophies.vercel.app)](https://hacked-github-stat-trophies.vercel.app) and follow the general instructions from [the original repo](https://github.com/ryo-ma/github-profile-trophy).
+About usage, you can check [How to use](/USAGE.md).
 
-If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts](https://github.com/FlyN-Nick/hacked-github-stat-trophies/blob/master/src/card.ts)
+## Self Deploy
 
 You'll have to deploy yourself, for [Vercel](/VercelDeployGuide.md)) or [local](/LocalDeployGuide.md)
-```
-// LINE #50
+
+If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts](/src/trophy.ts#L13)
+
+```ts
 let wantAllSuperRank = true;
-let wantLongTimeAccount = false;
+let wantMultipleLang = true;
+let wantLongTimeAccount = true;
 let wantAncientAccount = false;
 let wantNewAccount = false;
+let wantMultipleOrganizations = true;
 ```
-If you want to disable automatically getting the "MultipleLang" secret trophy, change this boolean to false in [src/trophies.ts](https://github.com/FlyN-Nick/hacked-github-stat-trophies/blob/master/src/trophies.ts):
-```
-// LINE #106
-let wantMultipleLang = true;
-```
+
 If you choose to use my deployment, it would be really appreciated if you gave me a star 🙃.
