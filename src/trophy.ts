@@ -177,11 +177,12 @@ export class LongTimeAccountTrophy extends Trophy{
       ),
     ];
     super(score, rankConditions);
-    this.title = "LongTimeUser";
+    this.title = "LongTimeUser" + score;
     this.filterTitles = ["LongTimeUser"];
-    this.hidden = true;
+    this.hidden = false;
   }
 }
+
 export class MultipleOrganizationsTrophy extends Trophy{
   constructor(score: number){
     const rankConditions = [
