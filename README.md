@@ -6,9 +6,33 @@ In this file, some modifications and improvements are added!
 
 About usage, you can check [How to use](/USAGE.md).
 
-## Self Deploy
+## Current Rank System
 
-You'll have to deploy yourself, for [Vercel](/VercelDeployGuide.md)) or [local](/LocalDeployGuide.md)
+Secret Trophies require 
+
+| Name of trophy | want (actived) | default |
+| --- | --- | --- |
+| MultipleLangTrophy | 5 | 10 |
+| AchieveSuperRankTrophy | 0 | 1 |
+| NewAccountTrophy | 0 | 1 |
+| AncientAccountTrophy | 0 | 1 |
+| LongTimeAccountTrophy | 0 | 5 |
+| MultipleOrganizationsTrophy | 1 | 3 |
+
+Base Trophies require
+
+| Name of trophy | C | B | A | AA | AAA | S | SS | SSS |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| TotalStarTrophy | 1 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 |
+| TotalCommitTrophy | 1 | 10 | 100 | 200 | 500 | 700 | 1000 | 2000 |
+| TotalFollowerTrophy | 1 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 |
+| TotalIssueTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 |
+| TotalPullRequestTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 |
+| TotalRepositoryTrophy | 1 | 10 | 20 | 30 | 40 | 50 | 70 | 100 |
+
+## Self-modify
+
+You'll have to deploy yourself, for [Vercel](/VercelDeployGuide.md) or [localhost](/LocalDeployGuide.md)
 
 If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts at line 13](/src/trophy.ts#L13)
 
@@ -20,30 +44,6 @@ let wantAncientAccount = false;
 let wantNewAccount = false;
 let wantMultipleOrganizations = true;
 ```
-
-## Current Rank System
-
-Secret Trophies
-
-| Name of trophy | want active | default |
-| --- | --- | --- |
-| MultipleLangTrophy | 5 | 10 |
-| AchieveSuperRankTrophy | 0 | 1 |
-| NewAccountTrophy | 0 | 1 |
-| AncientAccountTrophy | 0 | 1 |
-| LongTimeAccountTrophy | 0 | 5 |
-| MultipleOrganizationsTrophy | 1 | 3 |
-
-Base Trophies
-
-| Name of trophy | C | B | A | AA | AAA | S | SS | SSS |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| TotalStarTrophy | 1 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 |
-| TotalCommitTrophy | 1 | 10 | 100 | 200 | 500 | 700 | 1000 | 2000 |
-| TotalFollowerTrophy | 1 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 |
-| TotalIssueTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 |
-| TotalPullRequestTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 |
-| TotalRepositoryTrophy | 1 | 10 | 20 | 30 | 40 | 50 | 70 | 100 |
 
 ## Change logs
 
