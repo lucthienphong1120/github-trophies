@@ -135,7 +135,7 @@ export class AchieveSuperRankTrophy extends Trophy{
       ),
     ];
     super(score, rankConditions);
-    this.title = "AchieveSuperRank";
+    this.title = "AchieveSRank";
     this.filterTitles = ["AchieveSuperRank"];
     this.bottomMessage = "Have S Rank";
     this.hidden = false;
