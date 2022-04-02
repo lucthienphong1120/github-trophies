@@ -8,7 +8,7 @@ About usage, you can check [How to use](/USAGE.md).
 
 ## Current Rank System
 
-Secret Trophies
+Secret Trophies require 
 
 | Name of trophy | want (actived) | default |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ Secret Trophies
 | LongTimeAccountTrophy | 0 | 5 |
 | MultipleOrganizationsTrophy | 1 | 3 |
 
-Base Trophies
+Base Trophies require
 
 | Name of trophy | C | B | A | AA | AAA | S | SS | SSS |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
