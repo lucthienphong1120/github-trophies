@@ -4,7 +4,13 @@ This "hacked" version of `Github Profile Trophy` (ryo-ma) allows you to show all
 
 In this file, some modifications and improvements are added!
 
-About usage, you can check [How to use](/USAGE.md).
+```
+![](https://github-trophies.vercel.app/?username=yourusername)
+```
+
+![](https://github-trophies.vercel.app/?username=lucthienphong1120)
+
+About fully usage, you can check [How to use](/USAGE.md).
 
 ## Current Rank System
 
