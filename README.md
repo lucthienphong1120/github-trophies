@@ -10,7 +10,7 @@ About usage, you can check [How to use](/USAGE.md).
 
 Secret Trophies
 
-| Name of trophy | want active | default |
+| Name of trophy | want (actived) | default |
 | --- | --- | --- |
 | MultipleLangTrophy | 5 | 10 |
 | AchieveSuperRankTrophy | 0 | 1 |
@@ -32,7 +32,7 @@ Base Trophies
 
 ## Self-modify
 
-You'll have to deploy yourself, for [Vercel](/VercelDeployGuide.md) or [local](/LocalDeployGuide.md)
+You'll have to deploy yourself, for [Vercel](/VercelDeployGuide.md) or [localhost](/LocalDeployGuide.md)
 
 If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts at line 13](/src/trophy.ts#L13)
 
