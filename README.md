@@ -6,21 +6,6 @@ In this file, some modifications and improvements are added!
 
 About usage, you can check [How to use](/USAGE.md).
 
-## Self Deploy
-
-You'll have to deploy yourself, for [Vercel](/VercelDeployGuide.md)) or [local](/LocalDeployGuide.md)
-
-If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts at line 13](/src/trophy.ts#L13)
-
-```ts
-let wantAchieveSuperRank = false;
-let wantMultipleLang = true;
-let wantLongTimeAccount = true;
-let wantAncientAccount = false;
-let wantNewAccount = false;
-let wantMultipleOrganizations = true;
-```
-
 ## Current Rank System
 
 Secret Trophies
@@ -44,6 +29,21 @@ Base Trophies
 | TotalIssueTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 |
 | TotalPullRequestTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 |
 | TotalRepositoryTrophy | 1 | 10 | 20 | 30 | 40 | 50 | 70 | 100 |
+
+## Self-modify
+
+You'll have to deploy yourself, for [Vercel](/VercelDeployGuide.md) or [local](/LocalDeployGuide.md)
+
+If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts at line 13](/src/trophy.ts#L13)
+
+```ts
+let wantAchieveSuperRank = false;
+let wantMultipleLang = true;
+let wantLongTimeAccount = true;
+let wantAncientAccount = false;
+let wantNewAccount = false;
+let wantMultipleOrganizations = true;
+```
 
 ## Change logs
 
