@@ -2,7 +2,7 @@
 
 Do you know a version of `Github Profile Trophy` (ryo-ma), this version will allows you to show all secret trophies instead of hidden it.
 
-Moreover, in this file some modifications and improvements are added!
+Moreover, in this file some modifications and improvements are added! (see [Change logs](#change-logs))
 
 ```
 ![](https://github-trophies.vercel.app/?username=yourusername)
