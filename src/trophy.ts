@@ -10,6 +10,12 @@ class RankCondition {
   ) {}
 }
 
+let wantAllSuperRank = true;
+let wantMultipleLang = true;
+let wantLongTimeAccount = true;
+let wantAncientAccount = false;
+let wantNewAccount = false;
+let wantMultipleOrganizations = true;
 
 export class Trophy {
   rankCondition: RankCondition | null = null;
@@ -109,7 +115,7 @@ export class MultipleLangTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Rainbow Lang User",
-        10,
+        (wantMultipleLang) ? 0 : 10,
       ),
     ];
     super(score, rankConditions);
@@ -125,7 +131,7 @@ export class AllSuperRankTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "S Rank Hacker",
-        1,
+        (wantAllSuperRank) ? 0 : 1,
       ),
     ];
     super(score, rankConditions);
@@ -141,7 +147,7 @@ export class NewAccountTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Everything started...",
-        1,
+        (wantNewAccount) ? 0 : 1,
       ),
     ];
     super(score, rankConditions);
@@ -157,7 +163,7 @@ export class AncientAccountTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Ancient User",
-        1,
+        (wantAncientAccount) ? 0 : 1,
       ),
     ];
     super(score, rankConditions);
@@ -173,7 +179,7 @@ export class LongTimeAccountTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Village Elder",
-        5,
+        (wantLongTimeAccount) ? 0 : 5,
       ),
     ];
     super(score, rankConditions);
@@ -191,7 +197,7 @@ export class MultipleOrganizationsTrophy extends Trophy{
         RANK.SECRET,
         // or if this doesn't render well: "Factorum"
         "Jack of all Trades",
-        3,
+        (wantMultipleOrganizations) ? 1 : 3,
       ),
     ];
     super(score, rankConditions);

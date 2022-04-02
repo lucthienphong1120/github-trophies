@@ -45,14 +45,11 @@ export class TrophyList {
     return this.trophies;
   }
   private get isAllSRank() {
-      return this.trophies.reduce((sum,trophy) => {
-        var isSRank = trophy.rank.slice(0, 1) == RANK.S ? 1 : 0;
-        return sum + isSRank;
-      }, 0);
+    return this.trophies.every((trophy) => trophy.rank.slice(0, 1) == RANK.S) ? 1 : 0;
   }
   filterByHideen() {
     this.trophies = this.trophies.filter((trophy) =>
-      !trophy.hidden || trophy.rank !== RANK.UNKNOWN
+      !trophy.hidden || trophy.rank !== RANK.SSS
     );
   }
   filterByTitles(titles: Array<string>) {
