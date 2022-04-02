@@ -131,7 +131,7 @@ export class AllSuperRankTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "AllSuperRank";
     this.filterTitles = ["AllSuperRank"];
-    this.bottomMessage = "All S Rank"
+    this.bottomMessage = score + "pt";
     this.hidden = false;
   }
 }
@@ -147,7 +147,7 @@ export class NewAccountTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "NewUser";
     this.filterTitles = ["NewUser"];
-    this.bottomMessage = "After 2020"
+    this.bottomMessage = "After 2020";
     this.hidden = false;
   }
 }
@@ -163,7 +163,7 @@ export class AncientAccountTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "AncientUser";
     this.filterTitles = ["AncientUser"];
-    this.bottomMessage = "Before 2010"
+    this.bottomMessage = "Before 2010";
     this.hidden = false;
   }
 }
@@ -179,6 +179,7 @@ export class LongTimeAccountTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "LongTimeUser";
     this.filterTitles = ["LongTimeUser"];
+    this.bottomMessage = score + ((score>0) ? "years" : "year");
     this.hidden = false;
   }
 }
