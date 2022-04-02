@@ -1,8 +1,8 @@
 # Quick Start
 
-This "hacked" version of `Github Profile Trophy` (ryo-ma) allows you to show all secret trophies.
+Do you know a version of `Github Profile Trophy` (ryo-ma), this version will allows you to show all secret trophies instead of hidden it.
 
-In this file, some modifications and improvements are added!
+Moreover, in this file some modifications and improvements are added!
 
 ```
 ![](https://github-trophies.vercel.app/?username=yourusername)
