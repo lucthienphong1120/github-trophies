@@ -45,7 +45,11 @@ export class TrophyList {
     return this.trophies;
   }
   private get isAllSRank() {
-      return this.trophies.every((trophy) => trophy.rank.slice(0, 1) == RANK.S) ? 1 : 0;
+    var sum = 0;
+    this.trophies.forEach((trophy) => {
+        if(trophy.rank.slice(0, 1) == RANK.S) sum++;
+    });
+    return sum;
   }
   filterByHideen() {
     this.trophies = this.trophies.filter((trophy) =>
