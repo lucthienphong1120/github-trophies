@@ -14,6 +14,17 @@ About fully usage, you can check [How to use](/USAGE.md).
 
 ## Current Rank System
 
+Base Trophies require
+
+| Name of trophy | C | B | A | AA | AAA | S | SS | SSS | difficult rates |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| TotalStarTrophy | 1 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 | Hard |
+| TotalCommitTrophy | 1 | 10 | 100 | 200 | 500 | 700 | 1000 | 2000 | Normal |
+| TotalFollowerTrophy | 1 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 | Very Hard |
+| TotalIssueTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 | Hard |
+| TotalPullRequestTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 | Hard |
+| TotalRepositoryTrophy | 1 | 10 | 20 | 30 | 40 | 50 | 70 | 100 | Easy |
+
 Secret Trophies require 
 
 | Name of trophy | want (actived) | default |
@@ -24,17 +35,6 @@ Secret Trophies require
 | AncientAccountTrophy | 0 | 1 |
 | LongTimeAccountTrophy | 0 | 5 |
 | MultipleOrganizationsTrophy | 1 | 3 |
-
-Base Trophies require
-
-| Name of trophy | C | B | A | AA | AAA | S | SS | SSS |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| TotalStarTrophy | 1 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 |
-| TotalCommitTrophy | 1 | 10 | 100 | 200 | 500 | 700 | 1000 | 2000 |
-| TotalFollowerTrophy | 1 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 |
-| TotalIssueTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 |
-| TotalPullRequestTrophy | 1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 |
-| TotalRepositoryTrophy | 1 | 10 | 20 | 30 | 40 | 50 | 70 | 100 |
 
 ## Self-modify
 
