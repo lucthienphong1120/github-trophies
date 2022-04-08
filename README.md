@@ -1,6 +1,6 @@
 # Quick Start
 
-Do you know a version of `Github Profile Trophy` (ryo-ma), this version will allows you to show all secret trophies instead of hidden it.
+Do you know a version of [Github Profile Trophy (ryo-ma)](https://github.com/ryo-ma/github-profile-trophy), this version will allows you to show all secret trophies instead of hidden it.
 
 Moreover, in this file some modifications and improvements are added! (see [Change logs](#change-logs))
 
