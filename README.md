@@ -94,3 +94,7 @@ let wantMultipleOrganizations = true;
   - SS Rank from `90` to `70`
 
 If you choose to use my deployment, it would be really appreciated if you gave me a star 🙃.
+
+## See also
+
+> [Github Profile Maker](https://github.com/lucthienphong1120/github-profile-maker)
