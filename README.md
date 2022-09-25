@@ -1,6 +1,6 @@
 # Quick Start
 
-<p align="center">![](./logo.png)<p>
+<p align="center"><img src="logo.png"><p>
 
 Do you know a version of [Github Profile Trophy (ryo-ma)](https://github.com/ryo-ma/github-profile-trophy), this version will allows you to show all secret trophies instead of hidden it.
 
