@@ -48,7 +48,7 @@ Secret Trophies require
 
 You'll have to deploy yourself, for [Vercel](/VercelDeployGuide.md) or [localhost](/LocalDeployGuide.md)
 
-If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts at line 13](/src/trophy.ts#L13)
+If you want to configure which trophies you automatically get, configure these booleans in [src/trophy.ts at line 13](/src/trophy.ts#L13)
 
 ```ts
 let wantAchieveSuperRank = false;
