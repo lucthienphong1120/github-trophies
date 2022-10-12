@@ -30,7 +30,7 @@ export class TrophyList {
     );
     // Secret trophies
     this.trophies.push(
-      new AchieveSuperRankTrophy(this.haveSRank),
+      new AchieveSuperRankTrophy(this.haveSSSRank),
       new MultipleLangTrophy(userInfo.languageCount),
       new LongTimeAccountTrophy(userInfo.durationYear),
       new AncientAccountTrophy(userInfo.ancientAccount),
@@ -44,7 +44,7 @@ export class TrophyList {
   get getArray() {
     return this.trophies;
   }
-  private get haveSRank() {
+  private get haveSSSRank() {
     return this.trophies.some((trophy) => trophy.rank.slice(0, 1) == RANK.S) ? 1 : 0;
   }
   filterByHideen() {
