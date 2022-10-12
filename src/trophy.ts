@@ -130,14 +130,14 @@ export class AchieveSuperRankTrophy extends Trophy{
     const rankConditions = [
       new RankCondition(
         RANK.SECRET,
-        "S Rank Hacker",
+        "SSS Rank Hacker",
         (wantAchieveSuperRank) ? 0 : 1,
       ),
     ];
     super(score, rankConditions);
-    this.title = "AchieveSRank";
+    this.title = "AchieveSSSRank";
     this.filterTitles = ["AchieveSuperRank"];
-    this.bottomMessage = "Have S Rank";
+    this.bottomMessage = "Have SSS Rank";
     this.hidden = false;
   }
 }
@@ -179,7 +179,7 @@ export class LongTimeAccountTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Village Elder",
-        (wantLongTimeAccount) ? 0 : 5,
+        (wantLongTimeAccount) ? 0 : 3,
       ),
     ];
     super(score, rankConditions);
@@ -213,7 +213,7 @@ export class TotalStarTrophy extends Trophy {
       new RankCondition(
         RANK.SSS,
         "Super Stargazer",
-        1000,
+        1200,
       ),
       new RankCondition(
         RANK.SS,
@@ -223,7 +223,7 @@ export class TotalStarTrophy extends Trophy {
       new RankCondition(
         RANK.S,
         "Stargazer",
-        200,
+        250,
       ),
       new RankCondition(
         RANK.AAA,
@@ -238,7 +238,7 @@ export class TotalStarTrophy extends Trophy {
       new RankCondition(
         RANK.A,
         "You are a Star",
-        20,
+        25,
       ),
       new RankCondition(
         RANK.B,
