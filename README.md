@@ -36,7 +36,7 @@ Base Trophies require
 Secret Trophies require 
 
 | Name of trophy | Required to active |
-| --- | --- | --- |
+| --- | --- |
 | MultipleLangTrophy | at least 5 languages |
 | AchieveSuperRankTrophy | have a SSS rank |
 | NewAccountTrophy | signed in after 2020 |
