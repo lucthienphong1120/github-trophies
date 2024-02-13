@@ -4,11 +4,11 @@
 
 > Do you know a version of [Github Profile Trophy (ryo-ma)](https://github.com/ryo-ma/github-profile-trophy)
 
-So, this version will allows you to show all secret trophies instead of hidden it. [Rank Systems](#rank-systems)
+So, this version will allow you to show all secret trophies instead of hiding them. [Rank Systems](#rank-systems)
 
-It alse reduce their difficulty so you can easily set a nicer profile! [Change logs](#change-logs)
+It also reduces their difficulty so you can easily set a nicer profile! [Change logs](#change-logs)
 
-Moreover, in this file some modifications and improvements are added! [Change logs](#change-logs)
+Moreover, in this file, some modifications and improvements are added! [Change logs](#change-logs)
 
 ## Quick start
 
@@ -18,7 +18,7 @@ Moreover, in this file some modifications and improvements are added! [Change lo
 
 [![](https://github-trophies.vercel.app/?username=lucthienphong1120)](https://github-trophies.vercel.app/?username=lucthienphong1120)
 
-About fully usage, you can check [How to use](/USAGE.md).
+About full usage, you can check [How to use](/USAGE.md).
 
 ## Rank Systems
 
@@ -38,7 +38,7 @@ Secret Trophies require
 | Name of trophy | Required to active |
 | --- | --- |
 | MultipleLangTrophy | at least 5 languages |
-| AchieveSuperRankTrophy | have a SSS rank |
+| AchieveSuperRankTrophy | have an SSS rank |
 | NewAccountTrophy | signed in after 2020 |
 | AncientAccountTrophy | signed in before 2010 |
 | LongTimeAccountTrophy | more than 3 years |
